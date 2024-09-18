@@ -17,7 +17,10 @@ class NaviAPIController extends Controller
      */
     public function cep(Request $request, $cep)
     {
-        return (new NaviAPIService())->cep($cep);
+        if (config('naviapi.internal_url')) {
+            return (new NaviAPIService())->cep($cep);
+        }
+        return response()->json(['message' => 'Internal URL not configured'], 500);
     }
 
     /**
@@ -28,7 +31,10 @@ class NaviAPIController extends Controller
      */
     public function cpf(Request $request, $cpf)
     {
-        return (new NaviAPIService())->cpf($cpf);
+        if (config('naviapi.internal_url')) {
+            return (new NaviAPIService())->cpf($cpf);
+        }
+        return response()->json(['message' => 'Internal URL not configured'], 500);
     }
 
     /**
@@ -39,6 +45,9 @@ class NaviAPIController extends Controller
      */
     public function cnpj(Request $request, $cnpj)
     {
-        return (new NaviAPIService())->cnpj($cnpj);
+        if (config('naviapi.internal_url')) {
+            return (new NaviAPIService())->cnpj($cnpj);
+        }
+        return response()->json(['message' => 'Internal URL not configured'], 500);
     }
 }

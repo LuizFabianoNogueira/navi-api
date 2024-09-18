@@ -11,4 +11,9 @@ return [
      * access token navi api
      */
     'token' => env('NAVI_API_TOKEN', ''),
+
+    /**
+     * internal url navi api
+     */
+    'internal_url' => env('NAVI_API_INTERNAL_URL', false),
 ];
