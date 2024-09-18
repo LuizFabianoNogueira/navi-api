@@ -1,0 +1,30 @@
+{
+    "name": "luizfabianonogueira/navi-api",
+    "description": "Serviços de busca CPF, CNPJ e CEP envio de SMS, TOKEN SMS e muito mais para o seu sistema.",
+    "keywords": ["cpf", "cnpj", "cep", "sms", "token", "api"],
+    "type": "library",
+    "license": "LGPL-3.0-or-later",
+    "autoload": {
+        "psr-4": {
+            "LuizFabianoNogueira\\NaviAPI\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Luiz Fabianno Nogueira",
+            "email": "luizfabianonogueira@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=8.3",
+        "laravel/framework": ">=v10.0.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LuizFabianoNogueira\\NaviAPI\\NaviAPIServiceProvider"
+            ]
+        }
+    }
+}
