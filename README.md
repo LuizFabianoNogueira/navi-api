@@ -33,7 +33,7 @@ Acesse o site para verificar a documentação e os planos disponíveis.
 3. Publique as configurações do pacote:
 
     ```bash
-    php artisan vendor:publish --provider="LuizFabianoNogueira\NaviAPI\NaviAPIServiceProvider"
+    php artisan vendor:publish --tag=navi-api-config
     ```
 
 4. Configure as variáveis de ambiente no arquivo `.env`:
