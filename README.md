@@ -6,6 +6,9 @@ O `NaviAPI` é uma biblioteca PHP que fornece serviços para consulta de CEP, CP
 O serviço é fornecido pela [NaviAPI](https://api.navi.inf.br/). \
 Acesse o site para verificar a documentação e os planos disponíveis.
 
+
+### License: LGPL-3.0-or-later
+
 ## Instalação
 
 ### Requisitos
