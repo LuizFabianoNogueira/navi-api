@@ -26,7 +26,7 @@ Acesse o site para verificar a documentação e os planos disponíveis.
     <?php
     return [
         // other providers...
-        LuizFabianoNogueira\SseNotify\SseServiceProvider::class, 
+        LuizFabianoNogueira\NaviAPI\NaviAPIServiceProvider::class, 
     ];
     ```
 
@@ -39,8 +39,8 @@ Acesse o site para verificar a documentação e os planos disponíveis.
 4. Configure as variáveis de ambiente no arquivo `.env`:
 
     ```env
-    NAVIAPI_URL=https://api.exemplo.com
-    NAVIAPI_TOKEN=seu_token_aqui
+    NAVI_API_URL=https://api.exemplo.com
+    NAVI_API_TOKEN=seu_token_aqui
     NAVI_API_INTERNAL_URL=false
     ```
 
@@ -62,7 +62,7 @@ class HomeController extends Controller
         $naviAPIService = new NaviAPIService();
 
         // Exemplo de consulta de CEP
-        $cep = $naviAPIService->cep('88###-###');
+        $cep = $naviAPIService->cep('#####-###');
         dump($cep);
 
         // Exemplo de consulta de CPF
@@ -88,16 +88,29 @@ Para facilitar seu uso adicionamos um acesso direto pela url de seu sistema para
 - CPF: `https://yourdomain.com/navi-api/cpf/{cpf}`
 - CNPJ: `https://yourdomain.com/navi-api/cnpj/{cnpj}`
 
-## Questions and contributions
 
-[luizfabianonogueira@gmail.com](mailto:luizfabianonogueira@gmail.com) \
-+55 48 991779088 \
 
-PIX email:
-```
-luizfabianonogueira@gmail.com
-```
-PIX phone
-```
-48991779088
-```
+___
+___
+
+## Contact & Support
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-000?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/luiz-fabiano-nogueira-b20875170/)
+[![WhatsApp](https://img.shields.io/badge/WhatsApp-000?style=for-the-badge&logo=whatsapp&logoColor=white)](https://api.whatsapp.com/send?phone=5548991779088)
+[![GitHub](https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/LuizFabianoNogueira)
+[![Packagist](https://img.shields.io/badge/Packagist-000?style=for-the-badge&logo=packagist&logoColor=white)](https://packagist.org/packages/luizfabianonogueira/)
+
+📞 **Phone:** [+5548991779088](tel:+5548991779088)  
+✉️ **Email:** [luizfabianonogueira@gmail.com](mailto:luizfabianonogueira@gmail.com)
+
+---
+
+### Support My Work
+
+If you enjoyed this project and would like to support my work, any donation via Pix is greatly appreciated!  
+Feel free to donate using one of the following Pix keys:
+
+💳 **Email Pix Key:** `luizfabianonogueira@gmail.com`  
+📱 **Phone Pix Key:** `+55 48 99177-9088`
+
+Thank you for your support!
