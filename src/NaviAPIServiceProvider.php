@@ -12,7 +12,7 @@ class NaviAPIServiceProvider extends ServiceProvider
         $this->loadMigrationsFrom(__DIR__ . '/Migrations');
 
         $this->publishes([
-            __DIR__.'/Config/naviapi.php' => config_path(),
+            __DIR__.'/Config/naviapi.php' => config_path('naviapi.php'),
         ], 'navi-api-config');
     }
 }
