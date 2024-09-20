@@ -1,3 +1,5 @@
+<p align="center"><img src="src/Assets/img/laravel.jpg" width="400" alt="Laravel Logo"></p>
+
 # NAVI API
 
 ## Descrição
@@ -45,6 +47,11 @@ Acesse o site para verificar a documentação e os planos disponíveis.
     NAVI_API_URL=https://api.exemplo.com
     NAVI_API_TOKEN=seu_token_aqui
     NAVI_API_INTERNAL_URL=false
+    ```
+5. Execute o comando abaixo para aplicar as configurações:
+
+    ```bash
+    php artisan config:cache
     ```
 
 ## Uso
