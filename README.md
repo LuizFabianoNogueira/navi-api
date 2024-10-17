@@ -7,8 +7,6 @@
 [![Latest Unstable Version](https://poser.pugx.org/luizfabianonogueira/navi-api/v/unstable)](//packagist.org/packages/luizfabianonogueira/navi-api)
 [![License](https://poser.pugx.org/luizfabianonogueira/navi-api/license)](//packagist.org/packages/luizfabianonogueira/navi-api)
 
-![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=IN%20DEVELOPMENT&color=GREEN&style=for-the-badge)
-
 ## Descrição
 
 O `NaviAPI` é uma biblioteca PHP que fornece serviços para consulta de CEP, CPF e CNPJ. Ele utiliza a estrutura do Laravel para configuração e integração. \
